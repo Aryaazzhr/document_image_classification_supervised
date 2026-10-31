@@ -1,0 +1,3 @@
+run,accuracy,macro_f1,validation_rows,best_epoch
+baseline_cnn,0.6803752931978108,0.6730166243992567,6395,5
+efficientnet_improved,0.8544175136825645,0.8533156811409401,6395,8

@@ -1,0 +1,12 @@
+{
+  "experiment": "convnext_selection",
+  "runs": ["efficientnet_improved", "efficientnet_highres", "resnet_diversity", "resnet_highres", "convnext_diversity"],
+  "candidates": [
+    {"variant": "previous_four_model_blend", "weights": [0.25, 0.25, 0.25, 0.25, 0.0]},
+    {"variant": "convnext_single", "weights": [0.0, 0.0, 0.0, 0.0, 1.0]},
+    {"variant": "equal_architecture_blend", "weights": [0.16666666666666666, 0.16666666666666666, 0.16666666666666666, 0.16666666666666666, 0.3333333333333333]},
+    {"variant": "half_convnext_blend", "weights": [0.125, 0.125, 0.125, 0.125, 0.5]}
+  ],
+  "selection_rule": "Highest holdout accuracy; ties prefer the first listed candidate",
+  "submission": "submissions/submission_convnext_selected.csv"
+}

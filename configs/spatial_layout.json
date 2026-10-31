@@ -1,0 +1,23 @@
+{
+  "run_name": "spatial_layout",
+  "model": "spatial_head",
+  "source": "convnext_diversity",
+  "page_wh": [
+    320,
+    416
+  ],
+  "header_wh": [
+    384,
+    192
+  ],
+  "header_fraction": 0.4,
+  "hidden": 384,
+  "epochs": 16,
+  "batch_size": 256,
+  "extract_batch_size": 24,
+  "workers": 2,
+  "learning_rate": 0.0007,
+  "weight_decay": 0.02,
+  "label_smoothing": 0.05,
+  "seed": 42
+}

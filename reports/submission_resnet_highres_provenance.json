@@ -1,0 +1,32 @@
+{
+  "checkpoint": "checkpoint\\resnet_highres\\best.pt",
+  "checkpoint_sha256": "d99adaa67fc13be635e4f1d9e2bc1a6a13ca23e15df1e45ba685e258f7ec9a83",
+  "submission_sha256": "77d772fe2e458e8f86a88efc41978499c98587fd552da6104a4f34bcab055635",
+  "rows": 7994,
+  "label_counts": {
+    "0": 523,
+    "1": 476,
+    "2": 493,
+    "3": 512,
+    "4": 501,
+    "5": 507,
+    "6": 487,
+    "7": 501,
+    "8": 494,
+    "9": 477,
+    "10": 530,
+    "11": 484,
+    "12": 505,
+    "13": 511,
+    "14": 503,
+    "15": 490
+  },
+  "best_epoch": 3,
+  "validation_metrics": {
+    "val_loss": 0.5319065614451274,
+    "accuracy": 0.8661454261141517,
+    "macro_f1": 0.8647306384336999
+  },
+  "public_score": null,
+  "private_score": null
+}

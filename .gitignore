@@ -1,0 +1,25 @@
+# Raw data, including the existing nested archive layout.
+data/
+train/
+test/
+train.csv
+test.csv
+sample_submission.csv
+checkpoint/
+*.zip
+*.tif
+*.tiff
+*.pt
+*.pth
+*.npy
+*.npz
+submissions/
+reports/**/validation_predictions.csv
+.venv/
+.venv-gpu/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.cache/
+

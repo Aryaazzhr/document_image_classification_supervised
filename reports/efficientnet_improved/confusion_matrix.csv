@@ -1,0 +1,17 @@
+,advertisement,budget,email,file_folder,form,handwritten,invoice,letter,memo,news_article,presentation,questionnaire,resume,scientific_publication,scientific_report,specification
+advertisement,353,1,0,4,4,4,0,5,0,8,7,4,1,4,0,1
+budget,1,319,2,7,13,1,7,1,1,4,10,3,0,0,18,2
+email,1,1,372,0,2,0,0,1,0,1,1,1,0,1,0,2
+file_folder,2,2,0,400,0,1,1,0,1,0,10,2,0,1,1,0
+form,2,9,0,4,282,4,14,5,3,2,4,11,2,0,23,8
+handwritten,8,3,0,2,6,410,0,5,0,0,0,8,0,0,0,3
+invoice,1,18,0,4,35,2,291,11,2,3,3,1,1,2,2,4
+letter,1,1,2,1,11,4,3,322,11,1,6,4,2,0,3,2
+memo,3,3,5,4,13,0,1,8,361,4,6,2,3,0,9,0
+news_article,9,2,0,0,1,1,0,2,2,346,14,1,1,7,5,1
+presentation,9,11,2,10,9,1,1,2,3,10,289,11,2,4,31,0
+questionnaire,5,4,1,5,16,4,1,5,3,2,11,312,1,2,9,3
+resume,0,1,0,0,7,0,1,1,2,2,8,3,403,3,12,0
+scientific_publication,7,2,0,3,0,0,2,0,1,5,2,1,1,385,10,1
+scientific_report,9,17,0,3,15,1,0,8,6,7,29,11,7,7,281,8
+specification,1,4,1,1,11,0,2,1,0,1,2,3,1,0,3,338

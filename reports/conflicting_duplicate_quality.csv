@@ -1,0 +1,4 @@
+images,classes,min_pixel,max_pixel,std_pixel,white_fraction
+7,"memo,presentation,questionnaire,resume",0,255,30.717395712597206,0.9455328083989502
+21,"advertisement,news_article,scientific_report",0,255,53.598068070291106,0.9326657789613848
+15,"advertisement,form,news_article,presentation,scientific_report",0,255,49.61420790628824,0.9379920424403183

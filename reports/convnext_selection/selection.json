@@ -1,0 +1,176 @@
+{
+  "config": {
+    "experiment": "convnext_selection",
+    "runs": [
+      "efficientnet_improved",
+      "efficientnet_highres",
+      "resnet_diversity",
+      "resnet_highres",
+      "convnext_diversity"
+    ],
+    "candidates": [
+      {
+        "variant": "previous_four_model_blend",
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.0
+        ]
+      },
+      {
+        "variant": "convnext_single",
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "variant": "equal_architecture_blend",
+        "weights": [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.3333333333333333
+        ]
+      },
+      {
+        "variant": "half_convnext_blend",
+        "weights": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.5
+        ]
+      }
+    ],
+    "selection_rule": "Highest holdout accuracy; ties prefer the first listed candidate",
+    "submission": "submissions/submission_convnext_selected.csv"
+  },
+  "config_sha256": "42be578d6ffc79e85ac3e0caf7ebb7f6366ff321dccafae67a3e010f268b43cc",
+  "candidates": [
+    {
+      "variant": "previous_four_model_blend",
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.0
+      ],
+      "accuracy": 0.8822517591868647,
+      "macro_f1": 0.8814014430209244
+    },
+    {
+      "variant": "convnext_single",
+      "weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "accuracy": 0.8688037529319781,
+      "macro_f1": 0.8677540391061637
+    },
+    {
+      "variant": "equal_architecture_blend",
+      "weights": [
+        0.16666666666666666,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "accuracy": 0.8838154808444096,
+      "macro_f1": 0.8831720264957343
+    },
+    {
+      "variant": "half_convnext_blend",
+      "weights": [
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.5
+      ],
+      "accuracy": 0.8802189210320563,
+      "macro_f1": 0.8794042601068988
+    }
+  ],
+  "selected": {
+    "variant": "equal_architecture_blend",
+    "weights": [
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.3333333333333333
+    ],
+    "accuracy": 0.8838154808444096,
+    "macro_f1": 0.8831720264957343
+  },
+  "components": [
+    {
+      "run_name": "efficientnet_improved",
+      "model": "efficientnet_b0",
+      "image_size": 224,
+      "checkpoint": "checkpoint/efficientnet_improved/best.pt",
+      "checkpoint_sha256": "d8d9c6d97f01e5d982f182afdeba3b2496b514e062d0e1087dcddfdb153e1e7b",
+      "validation_archive_sha256": "b03d8414cce44d2b4bba9d383574cfdd99bf2648a0ead19c6831263dc1155a4c",
+      "validation_identity": "legacy_archive_with_matching_recorded_predictions"
+    },
+    {
+      "run_name": "efficientnet_highres",
+      "model": "efficientnet_b0",
+      "image_size": 320,
+      "checkpoint": "checkpoint/efficientnet_highres/best.pt",
+      "checkpoint_sha256": "e38ff8bd884d1b64419796a789df63223fc893def700330a824dc70f4fb2b724",
+      "validation_archive_sha256": "8d7e19b1fc0a7799730e4fa1e2e5b6d75cf0aa974eb119348778aca80e8785b8",
+      "validation_identity": "legacy_archive_with_matching_recorded_predictions"
+    },
+    {
+      "run_name": "resnet_diversity",
+      "model": "resnet50",
+      "image_size": 224,
+      "checkpoint": "checkpoint/resnet_diversity/best.pt",
+      "checkpoint_sha256": "6c74f241f766e61dbb2eb6e27a812b0cd967d9573848c0cc34176c6791cd1858",
+      "validation_archive_sha256": "451b37d69f18b4e5e16852ef3ce02f68b68b5fdb082e80b79fca343e83197009",
+      "validation_identity": "checkpoint_hash"
+    },
+    {
+      "run_name": "resnet_highres",
+      "model": "resnet50",
+      "image_size": 320,
+      "checkpoint": "checkpoint/resnet_highres/best.pt",
+      "checkpoint_sha256": "d99adaa67fc13be635e4f1d9e2bc1a6a13ca23e15df1e45ba685e258f7ec9a83",
+      "validation_archive_sha256": "eefb8cc29f3ad4b34fa62fb3955ef1ba610530d9b385628aa79f2f50ca47cf5c",
+      "validation_identity": "checkpoint_hash"
+    },
+    {
+      "run_name": "convnext_diversity",
+      "model": "convnext_tiny",
+      "image_size": 224,
+      "checkpoint": "checkpoint/convnext_diversity/best.pt",
+      "checkpoint_sha256": "9d29b5b128d7b6e5b7948f5d196157dc1145fb87fef177a26d9423470a8f52ad",
+      "validation_archive_sha256": "1bee633ae22b5abf00445bc72a02e7eea6341ce63282f6047743f7b96741b3b0",
+      "validation_identity": "checkpoint_hash"
+    }
+  ],
+  "validation_rows": 6395,
+  "test_rows": 7994,
+  "corrected_errors": 88,
+  "new_errors": 78,
+  "submission": "submissions/submission_convnext_selected.csv",
+  "submission_sha256": "d71c12145fb05a0bbc056eab61c5289d678e27d72ebb43d3320eaff8c90bba4e",
+  "leaderboard_score": 0.88289,
+  "limitation": "Shared holdout reused for checkpoint and candidate selection; no independent CV estimate",
+  "score_source": "Reported by user in chat",
+  "reported_on": "2026-10-31"
+}

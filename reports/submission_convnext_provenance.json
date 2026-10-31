@@ -1,0 +1,32 @@
+{
+  "checkpoint": "checkpoint\\convnext_diversity\\best.pt",
+  "checkpoint_sha256": "9d29b5b128d7b6e5b7948f5d196157dc1145fb87fef177a26d9423470a8f52ad",
+  "submission_sha256": "3a67d352f28882260e6848d52729fe0023ae35e9c39a4572cb46037f3f2993cc",
+  "rows": 7994,
+  "label_counts": {
+    "0": 532,
+    "1": 455,
+    "2": 494,
+    "3": 525,
+    "4": 521,
+    "5": 524,
+    "6": 494,
+    "7": 493,
+    "8": 477,
+    "9": 481,
+    "10": 531,
+    "11": 465,
+    "12": 501,
+    "13": 516,
+    "14": 485,
+    "15": 500
+  },
+  "best_epoch": 9,
+  "validation_metrics": {
+    "val_loss": 0.5475238989814358,
+    "accuracy": 0.8688037529319781,
+    "macro_f1": 0.8677540391061637
+  },
+  "public_score": null,
+  "private_score": null
+}

@@ -1,0 +1,20 @@
+{
+  "run_name": "ocr_header",
+  "reference": "shift_selection",
+  "language": "en-US",
+  "header_fraction": 0.45,
+  "scale": 1.35,
+  "workers": 4,
+  "chunk_size": 384,
+  "max_word_features": 40000,
+  "max_char_features": 40000,
+  "hidden": 128,
+  "epochs": 12,
+  "batch_size": 256,
+  "learning_rate": 0.002,
+  "seed": 42,
+  "ocr_weight": 0.38,
+  "min_words_for_full_weight": 12,
+  "bootstrap_replicates": 2000,
+  "acceptance": "higher accuracy and macro-F1, with positive lower 95% paired bootstrap gain by exact-pixel group"
+}

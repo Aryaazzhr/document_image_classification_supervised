@@ -1,0 +1,14 @@
+{
+  "reference": "efficientnet_highres",
+  "candidate": "resnet_diversity",
+  "identical_split": true,
+  "accuracy_gain_percentage_points": 0.17200938232994067,
+  "macro_f1_gain": 0.0020981066327857567,
+  "corrected_errors": 258,
+  "new_errors": 247,
+  "both_correct": 5268,
+  "both_wrong": 622,
+  "classes_with_f1_improvement": 11,
+  "candidate_leaderboard_score": null,
+  "recommended_run": "resnet_diversity"
+}

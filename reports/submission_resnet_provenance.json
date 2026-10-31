@@ -1,0 +1,32 @@
+{
+  "checkpoint": "checkpoint\\resnet_diversity\\best.pt",
+  "checkpoint_sha256": "6c74f241f766e61dbb2eb6e27a812b0cd967d9573848c0cc34176c6791cd1858",
+  "submission_sha256": "9550a62690e28074bc7fcb121c96b252fecb6408da8c18a1c4f4966081aea700",
+  "rows": 7994,
+  "label_counts": {
+    "0": 534,
+    "1": 470,
+    "2": 500,
+    "3": 521,
+    "4": 518,
+    "5": 499,
+    "6": 486,
+    "7": 530,
+    "8": 463,
+    "9": 433,
+    "10": 544,
+    "11": 479,
+    "12": 505,
+    "13": 524,
+    "14": 501,
+    "15": 487
+  },
+  "best_epoch": 9,
+  "validation_metrics": {
+    "val_loss": 0.5329312891956416,
+    "accuracy": 0.8641125879593432,
+    "macro_f1": 0.8633644553626177
+  },
+  "public_score": null,
+  "private_score": null
+}

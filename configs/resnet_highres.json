@@ -1,0 +1,20 @@
+{
+  "run_name": "resnet_highres",
+  "model": "resnet50",
+  "pretrained": false,
+  "init_checkpoint": "checkpoint/resnet_diversity/best.pt",
+  "image_size": 320,
+  "epochs": 6,
+  "batch_size": 24,
+  "learning_rate": 0.00003,
+  "weight_decay": 0.01,
+  "label_smoothing": 0.05,
+  "patience": 3,
+  "seed": 42,
+  "validation_fraction": 0.2,
+  "workers": 2,
+  "threads": 4,
+  "amp": true,
+  "selection_metric": "accuracy",
+  "geometry": {"degrees": 1.5, "translate": 0.015, "scale": 0.03}
+}

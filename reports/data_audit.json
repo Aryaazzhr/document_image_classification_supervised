@@ -1,0 +1,96 @@
+{
+  "train_rows": 32003,
+  "test_rows": 7994,
+  "classes": [
+    "advertisement",
+    "budget",
+    "email",
+    "file_folder",
+    "form",
+    "handwritten",
+    "invoice",
+    "letter",
+    "memo",
+    "news_article",
+    "presentation",
+    "questionnaire",
+    "resume",
+    "scientific_publication",
+    "scientific_report",
+    "specification"
+  ],
+  "class_counts": {
+    "advertisement": 2012,
+    "budget": 2004,
+    "email": 2013,
+    "file_folder": 2022,
+    "form": 2005,
+    "handwritten": 2026,
+    "invoice": 1982,
+    "letter": 1972,
+    "memo": 1994,
+    "news_article": 1971,
+    "presentation": 1992,
+    "questionnaire": 1948,
+    "resume": 2029,
+    "scientific_publication": 2056,
+    "scientific_report": 1999,
+    "specification": 1978
+  },
+  "missing_metadata_values": 0,
+  "unreadable_images": 1,
+  "excluded_training_images": [
+    "train_08795"
+  ],
+  "usable_training_rows": 32002,
+  "train_duplicate_pixel_rows": 48,
+  "conflicting_duplicate_groups": 3,
+  "test_images_matching_train_pixels": 25,
+  "multipage_images": 0,
+  "dimensions": {
+    "train": {
+      "width": {
+        "count": 32002.0,
+        "mean": 766.3389163177302,
+        "std": 27.784386432338486,
+        "min": 606.0,
+        "25%": 754.0,
+        "50%": 762.0,
+        "75%": 777.0,
+        "max": 2542.0
+      },
+      "height": {
+        "count": 32002.0,
+        "mean": 1000.0,
+        "std": 0.0,
+        "min": 1000.0,
+        "25%": 1000.0,
+        "50%": 1000.0,
+        "75%": 1000.0,
+        "max": 1000.0
+      }
+    },
+    "test": {
+      "width": {
+        "count": 7994.0,
+        "mean": 765.6933950462848,
+        "std": 26.972194029253778,
+        "min": 606.0,
+        "25%": 754.0,
+        "50%": 754.0,
+        "75%": 777.0,
+        "max": 1473.0
+      },
+      "height": {
+        "count": 7994.0,
+        "mean": 1000.0,
+        "std": 0.0,
+        "min": 1000.0,
+        "25%": 1000.0,
+        "50%": 1000.0,
+        "75%": 1000.0,
+        "max": 1000.0
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "reference": "efficientnet_improved",
+  "candidate": "efficientnet_highres",
+  "identical_split": true,
+  "accuracy_gain_percentage_points": 0.797498045347933,
+  "macro_f1_gain": 0.007950667588891847,
+  "corrected_errors": 232,
+  "new_errors": 181,
+  "both_correct": 5283,
+  "both_wrong": 699,
+  "classes_with_f1_improvement": 13,
+  "candidate_leaderboard_score": null,
+  "recommended_run": "efficientnet_highres"
+}

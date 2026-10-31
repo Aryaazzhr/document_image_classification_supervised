@@ -1,0 +1,35 @@
+{
+  "checkpoint": "checkpoint\\baseline_cnn\\best.pt",
+  "checkpoint_sha256": "b16bae99cf0de36e1ed726824ec879d8935d62d8bbb7eb0d7157cd2d92a32a46",
+  "submission_sha256": "5fd9913aedf081fdb66e9823eb28e36e6146162113f3d1640f87be76fd4f6d5c",
+  "rows": 7994,
+  "label_counts": {
+    "0": 530,
+    "1": 483,
+    "2": 519,
+    "3": 589,
+    "4": 495,
+    "5": 529,
+    "6": 482,
+    "7": 530,
+    "8": 484,
+    "9": 452,
+    "10": 610,
+    "11": 382,
+    "12": 498,
+    "13": 552,
+    "14": 398,
+    "15": 461
+  },
+  "best_epoch": 5,
+  "validation_metrics": {
+    "val_loss": 1.0758372708724009,
+    "accuracy": 0.6803752931978108,
+    "macro_f1": 0.6730166243992567
+  },
+  "public_score": null,
+  "private_score": null,
+  "reported_leaderboard_score": 0.67294,
+  "score_reported_on": "2026-10-27",
+  "score_source": "User report; public/private partition and official metric unspecified"
+}

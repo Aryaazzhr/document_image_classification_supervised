@@ -1,0 +1,64 @@
+{
+  "reference": "shift_selection",
+  "reference_sha256": "add52ff5540b14546a9c4c8f0868718bcda493927cf8f567b8f6a0ea159da8fb",
+  "config": {
+    "run_name": "ocr_header",
+    "reference": "shift_selection",
+    "language": "en-US",
+    "header_fraction": 0.45,
+    "scale": 1.35,
+    "workers": 4,
+    "chunk_size": 384,
+    "max_word_features": 40000,
+    "max_char_features": 40000,
+    "hidden": 128,
+    "epochs": 12,
+    "batch_size": 256,
+    "learning_rate": 0.002,
+    "seed": 42,
+    "ocr_weight": 0.38,
+    "min_words_for_full_weight": 12,
+    "bootstrap_replicates": 2000,
+    "acceptance": "higher accuracy and macro-F1, with positive lower 95% paired bootstrap gain by exact-pixel group"
+  },
+  "metrics": [
+    {
+      "model": "vision",
+      "accuracy": 0.8847537138389366,
+      "macro_f1": 0.884133698881795
+    },
+    {
+      "model": "ocr",
+      "accuracy": 0.6484753713838937,
+      "macro_f1": 0.649989101857007
+    },
+    {
+      "model": "vision_ocr",
+      "accuracy": 0.8947615324472243,
+      "macro_f1": 0.8939426845452991
+    }
+  ],
+  "accepted": true,
+  "accuracy_gain": 0.010007818608287724,
+  "paired_interval_95": [
+    0.006243147174195203,
+    0.013854296388542964
+  ],
+  "corrected_errors": 113,
+  "new_errors": 49,
+  "validation_rows": 6395,
+  "validation_nonempty": 5090,
+  "validation_full_weight": 4110,
+  "test_rows": 7994,
+  "test_changes": 263,
+  "cache_key": "e8648abb9bcd32122f52147fec68ad0baf8cd9f996c69478640aba0dbc34b9f7",
+  "training_text_sha256": "c0fef31b2a963a579222557335e6d7bbe5bfca384727d069e86297fb1464c87f",
+  "ocr_text_sha256": "ea2ef349786c6678899d52d22b9f26cb39dcf8e20a675f69c23806286b002595",
+  "model_sha256": "87496fed4ff34d0d10929a0ad145861c002b189fb0fafcd8ab949055a6ceaf02",
+  "submission": "submissions/submission_ocr_header.csv",
+  "submission_sha256": "f83b6d6b74019fd8ad88f54b9d4ffbfea3aee09c16bc39d7eb5a9f37e46298d3",
+  "leaderboard_score": 0.90046,
+  "device": "cuda",
+  "reported_on": "2026-10-31",
+  "score_source": "Reported by user in chat"
+}

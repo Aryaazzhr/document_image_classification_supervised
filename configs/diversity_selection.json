@@ -1,0 +1,11 @@
+{
+  "experiment": "diversity_selection",
+  "runs": ["efficientnet_improved", "efficientnet_highres", "resnet_diversity"],
+  "candidates": [
+    {"variant": "previous_ensemble", "weights": [0.5, 0.5, 0.0]},
+    {"variant": "resnet_single", "weights": [0.0, 0.0, 1.0]},
+    {"variant": "diverse_blend", "weights": [0.25, 0.25, 0.5]}
+  ],
+  "selection_rule": "Highest holdout accuracy; ties prefer the first listed candidate",
+  "submission": "submissions/submission_diversity_selected.csv"
+}

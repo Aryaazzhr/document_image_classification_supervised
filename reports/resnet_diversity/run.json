@@ -1,0 +1,41 @@
+{
+  "config": {
+    "run_name": "resnet_diversity",
+    "model": "resnet50",
+    "pretrained": true,
+    "image_size": 224,
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "label_smoothing": 0.05,
+    "patience": 4,
+    "seed": 42,
+    "validation_fraction": 0.2,
+    "workers": 2,
+    "threads": 4,
+    "amp": true,
+    "selection_metric": "accuracy",
+    "geometry": {
+      "degrees": 1.5,
+      "translate": 0.015,
+      "scale": 0.03
+    }
+  },
+  "device": "cuda",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.10.7",
+    "torchvision": "0.26.0+cu128"
+  },
+  "initialization": null,
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "train_rows": 25607,
+  "validation_rows": 6395,
+  "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+  "parameter_count": 23540816
+}

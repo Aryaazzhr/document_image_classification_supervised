@@ -1,0 +1,12 @@
+{
+  "experiment": "resnet_highres_selection",
+  "runs": ["efficientnet_improved", "efficientnet_highres", "resnet_diversity", "resnet_highres"],
+  "candidates": [
+    {"variant": "previous_diverse_blend", "weights": [0.25, 0.25, 0.5, 0.0]},
+    {"variant": "resnet_highres_single", "weights": [0.0, 0.0, 0.0, 1.0]},
+    {"variant": "replace_resnet_224", "weights": [0.25, 0.25, 0.0, 0.5]},
+    {"variant": "four_model_blend", "weights": [0.25, 0.25, 0.25, 0.25]}
+  ],
+  "selection_rule": "Highest holdout accuracy; ties prefer the first listed candidate",
+  "submission": "submissions/submission_resnet_highres_selected.csv"
+}

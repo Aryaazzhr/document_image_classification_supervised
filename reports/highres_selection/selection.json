@@ -1,0 +1,61 @@
+{
+  "selection_rule": "Highest holdout accuracy; ties prefer the highres single model",
+  "candidates": [
+    {
+      "variant": "highres_single",
+      "weights": [
+        0.0,
+        1.0
+      ],
+      "accuracy": 0.8623924941360438,
+      "macro_f1": 0.861266348729832
+    },
+    {
+      "variant": "previous_single",
+      "weights": [
+        1.0,
+        0.0
+      ],
+      "accuracy": 0.8544175136825645,
+      "macro_f1": 0.8533156811409401
+    },
+    {
+      "variant": "equal_blend",
+      "weights": [
+        0.5,
+        0.5
+      ],
+      "accuracy": 0.8652071931196247,
+      "macro_f1": 0.8640173594509721
+    }
+  ],
+  "selected": {
+    "variant": "equal_blend",
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "accuracy": 0.8652071931196247,
+    "macro_f1": 0.8640173594509721
+  },
+  "validation_rows": 6395,
+  "components": [
+    {
+      "run_name": "efficientnet_improved",
+      "checkpoint": "checkpoint\\efficientnet_improved\\best.pt",
+      "checkpoint_sha256": "d8d9c6d97f01e5d982f182afdeba3b2496b514e062d0e1087dcddfdb153e1e7b"
+    },
+    {
+      "run_name": "efficientnet_highres",
+      "checkpoint": "checkpoint\\efficientnet_highres\\best.pt",
+      "checkpoint_sha256": "e38ff8bd884d1b64419796a789df63223fc893def700330a824dc70f4fb2b724"
+    }
+  ],
+  "submission": "submissions\\submission_highres_selected.csv",
+  "submission_sha256": "9a2231e16ba635ae4f99aa8f74fe8ed5efd46853e856fc38f78b15a40e3303eb",
+  "test_rows": 7994,
+  "leaderboard_score": 0.86491,
+  "limitation": "The shared holdout was used for both checkpoint and blend selection; no independent CV estimate",
+  "reported_on": "2026-10-28",
+  "score_source": "Reported by user in chat; leaderboard partition unspecified"
+}

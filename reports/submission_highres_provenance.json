@@ -1,0 +1,32 @@
+{
+  "checkpoint": "checkpoint\\efficientnet_highres\\best.pt",
+  "checkpoint_sha256": "e38ff8bd884d1b64419796a789df63223fc893def700330a824dc70f4fb2b724",
+  "submission_sha256": "34628760750e409a6d4c0c9aa4283080a9810e18046cdcc7a9d211366af36a55",
+  "rows": 7994,
+  "label_counts": {
+    "0": 510,
+    "1": 471,
+    "2": 491,
+    "3": 534,
+    "4": 507,
+    "5": 487,
+    "6": 487,
+    "7": 525,
+    "8": 471,
+    "9": 475,
+    "10": 509,
+    "11": 510,
+    "12": 518,
+    "13": 517,
+    "14": 491,
+    "15": 491
+  },
+  "best_epoch": 5,
+  "validation_metrics": {
+    "val_loss": 0.5350499235157672,
+    "accuracy": 0.8623924941360438,
+    "macro_f1": 0.861266348729832
+  },
+  "public_score": null,
+  "private_score": null
+}

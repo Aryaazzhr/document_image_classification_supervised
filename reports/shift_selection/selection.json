@@ -1,0 +1,292 @@
+{
+  "config": {
+    "experiment": "shift_selection",
+    "runs": [
+      "efficientnet_improved",
+      "efficientnet_highres",
+      "resnet_diversity",
+      "resnet_highres",
+      "convnext_diversity",
+      "spatial_layout",
+      "efficientnet_improved",
+      "efficientnet_highres",
+      "resnet_diversity",
+      "resnet_highres",
+      "convnext_diversity"
+    ],
+    "views": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "shift4",
+      "shift4",
+      "shift4",
+      "shift4",
+      "shift4"
+    ],
+    "candidates": [
+      {
+        "variant": "spatial_20_center",
+        "weights": [
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333,
+          0.26666666666666666,
+          0.2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "variant": "spatial_20_shift",
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.2,
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333,
+          0.13333333333333333,
+          0.26666666666666666
+        ]
+      }
+    ],
+    "selection_rule": "Highest holdout accuracy, prefer center on a tie",
+    "submission": "submissions/submission_shift_selected.csv"
+  },
+  "config_sha256": "0a8109668421ba4e0b4c6842474158e05f0604e7deba8f63ce16e07a3e27756e",
+  "candidates": [
+    {
+      "variant": "spatial_20_center",
+      "weights": [
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.26666666666666666,
+        0.2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "accuracy": 0.8844409695074277,
+      "macro_f1": 0.8837318278378796
+    },
+    {
+      "variant": "spatial_20_shift",
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.2,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.13333333333333333,
+        0.26666666666666666
+      ],
+      "accuracy": 0.8847537138389366,
+      "macro_f1": 0.884133698881795
+    }
+  ],
+  "selected": {
+    "variant": "spatial_20_shift",
+    "weights": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.2,
+      0.13333333333333333,
+      0.13333333333333333,
+      0.13333333333333333,
+      0.13333333333333333,
+      0.26666666666666666
+    ],
+    "accuracy": 0.8847537138389366,
+    "macro_f1": 0.884133698881795
+  },
+  "components": [
+    {
+      "run_name": "efficientnet_improved",
+      "model": "efficientnet_b0",
+      "checkpoint": "checkpoint/efficientnet_improved/best.pt",
+      "checkpoint_sha256": "d8d9c6d97f01e5d982f182afdeba3b2496b514e062d0e1087dcddfdb153e1e7b",
+      "validation_archive_sha256": "b03d8414cce44d2b4bba9d383574cfdd99bf2648a0ead19c6831263dc1155a4c",
+      "validation_identity": "legacy_archive_with_matching_recorded_predictions",
+      "image_size": 224
+    },
+    {
+      "run_name": "efficientnet_highres",
+      "model": "efficientnet_b0",
+      "checkpoint": "checkpoint/efficientnet_highres/best.pt",
+      "checkpoint_sha256": "e38ff8bd884d1b64419796a789df63223fc893def700330a824dc70f4fb2b724",
+      "validation_archive_sha256": "8d7e19b1fc0a7799730e4fa1e2e5b6d75cf0aa974eb119348778aca80e8785b8",
+      "validation_identity": "legacy_archive_with_matching_recorded_predictions",
+      "image_size": 320
+    },
+    {
+      "run_name": "resnet_diversity",
+      "model": "resnet50",
+      "checkpoint": "checkpoint/resnet_diversity/best.pt",
+      "checkpoint_sha256": "6c74f241f766e61dbb2eb6e27a812b0cd967d9573848c0cc34176c6791cd1858",
+      "validation_archive_sha256": "451b37d69f18b4e5e16852ef3ce02f68b68b5fdb082e80b79fca343e83197009",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 224
+    },
+    {
+      "run_name": "resnet_highres",
+      "model": "resnet50",
+      "checkpoint": "checkpoint/resnet_highres/best.pt",
+      "checkpoint_sha256": "d99adaa67fc13be635e4f1d9e2bc1a6a13ca23e15df1e45ba685e258f7ec9a83",
+      "validation_archive_sha256": "eefb8cc29f3ad4b34fa62fb3955ef1ba610530d9b385628aa79f2f50ca47cf5c",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 320
+    },
+    {
+      "run_name": "convnext_diversity",
+      "model": "convnext_tiny",
+      "checkpoint": "checkpoint/convnext_diversity/best.pt",
+      "checkpoint_sha256": "9d29b5b128d7b6e5b7948f5d196157dc1145fb87fef177a26d9423470a8f52ad",
+      "validation_archive_sha256": "1bee633ae22b5abf00445bc72a02e7eea6341ce63282f6047743f7b96741b3b0",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 224
+    },
+    {
+      "run_name": "spatial_layout",
+      "model": "spatial_head",
+      "checkpoint": "checkpoint/spatial_layout/best.pt",
+      "checkpoint_sha256": "35e14f1c29b2e9043a66360298d349f073880bc8b190e682fa5e9a69b4ea981c",
+      "validation_archive_sha256": "222ef2ae2818e0ec9cb6de3bbb6bc50e4f672b0b923d64e192c4d7c0db50d1d8",
+      "validation_identity": "checkpoint_hash",
+      "page_wh": [
+        320,
+        416
+      ],
+      "header_wh": [
+        384,
+        192
+      ],
+      "source_run": "convnext_diversity",
+      "source_checkpoint_sha256": "9d29b5b128d7b6e5b7948f5d196157dc1145fb87fef177a26d9423470a8f52ad"
+    },
+    {
+      "run_name": "efficientnet_improved",
+      "model": "efficientnet_b0",
+      "checkpoint": "checkpoint/efficientnet_improved/best.pt",
+      "checkpoint_sha256": "d8d9c6d97f01e5d982f182afdeba3b2496b514e062d0e1087dcddfdb153e1e7b",
+      "validation_archive_sha256": "89374c24779e332f375146c23f2cec63b14393e42a42b1d861eb90f1a2c4a38e",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 224,
+      "inference_view": {
+        "view": "shift4",
+        "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+        "checkpoint_sha256": "d8d9c6d97f01e5d982f182afdeba3b2496b514e062d0e1087dcddfdb153e1e7b",
+        "distance_px": 3,
+        "padding": "white",
+        "device": "cuda",
+        "recipe": "original center FP32 plus four diagonal translations with equal weights",
+        "shifted_precision": "float16 autocast"
+      }
+    },
+    {
+      "run_name": "efficientnet_highres",
+      "model": "efficientnet_b0",
+      "checkpoint": "checkpoint/efficientnet_highres/best.pt",
+      "checkpoint_sha256": "e38ff8bd884d1b64419796a789df63223fc893def700330a824dc70f4fb2b724",
+      "validation_archive_sha256": "4fb3235d85e038e505ac7566cf72dd1fc0ca98d78f8d7241a8cd77108456a100",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 320,
+      "inference_view": {
+        "view": "shift4",
+        "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+        "checkpoint_sha256": "e38ff8bd884d1b64419796a789df63223fc893def700330a824dc70f4fb2b724",
+        "distance_px": 4,
+        "padding": "white",
+        "device": "cuda",
+        "recipe": "original center FP32 plus four diagonal translations with equal weights",
+        "shifted_precision": "float16 autocast"
+      }
+    },
+    {
+      "run_name": "resnet_diversity",
+      "model": "resnet50",
+      "checkpoint": "checkpoint/resnet_diversity/best.pt",
+      "checkpoint_sha256": "6c74f241f766e61dbb2eb6e27a812b0cd967d9573848c0cc34176c6791cd1858",
+      "validation_archive_sha256": "cf15b951b56298610dec1c290251425a15d0a113d166c9d93763c9faef7798da",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 224,
+      "inference_view": {
+        "view": "shift4",
+        "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+        "checkpoint_sha256": "6c74f241f766e61dbb2eb6e27a812b0cd967d9573848c0cc34176c6791cd1858",
+        "distance_px": 3,
+        "padding": "white",
+        "device": "cuda",
+        "recipe": "original center FP32 plus four diagonal translations with equal weights",
+        "shifted_precision": "float16 autocast"
+      }
+    },
+    {
+      "run_name": "resnet_highres",
+      "model": "resnet50",
+      "checkpoint": "checkpoint/resnet_highres/best.pt",
+      "checkpoint_sha256": "d99adaa67fc13be635e4f1d9e2bc1a6a13ca23e15df1e45ba685e258f7ec9a83",
+      "validation_archive_sha256": "40399c4a5cbf8f146a5485fe231d2455f36246df3c2d000cd0ad6e384aaf9ec1",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 320,
+      "inference_view": {
+        "view": "shift4",
+        "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+        "checkpoint_sha256": "d99adaa67fc13be635e4f1d9e2bc1a6a13ca23e15df1e45ba685e258f7ec9a83",
+        "distance_px": 4,
+        "padding": "white",
+        "device": "cuda",
+        "recipe": "original center FP32 plus four diagonal translations with equal weights",
+        "shifted_precision": "float16 autocast"
+      }
+    },
+    {
+      "run_name": "convnext_diversity",
+      "model": "convnext_tiny",
+      "checkpoint": "checkpoint/convnext_diversity/best.pt",
+      "checkpoint_sha256": "9d29b5b128d7b6e5b7948f5d196157dc1145fb87fef177a26d9423470a8f52ad",
+      "validation_archive_sha256": "da046c74b54d0e77922777fbd552e4f7d0c882f16979f0cad4f2ca64901257a6",
+      "validation_identity": "checkpoint_hash",
+      "image_size": 224,
+      "inference_view": {
+        "view": "shift4",
+        "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+        "checkpoint_sha256": "9d29b5b128d7b6e5b7948f5d196157dc1145fb87fef177a26d9423470a8f52ad",
+        "distance_px": 3,
+        "padding": "white",
+        "device": "cuda",
+        "recipe": "original center FP32 plus four diagonal translations with equal weights",
+        "shifted_precision": "float16 autocast"
+      }
+    }
+  ],
+  "validation_rows": 6395,
+  "test_rows": 7994,
+  "corrected_errors": 35,
+  "new_errors": 33,
+  "submission": "submissions/submission_shift_selected.csv",
+  "submission_sha256": "add52ff5540b14546a9c4c8f0868718bcda493927cf8f567b8f6a0ea159da8fb",
+  "leaderboard_score": null,
+  "limitation": "Shared holdout reused for checkpoint and candidate selection; no independent CV estimate"
+}

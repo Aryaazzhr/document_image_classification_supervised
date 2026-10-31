@@ -1,0 +1,11 @@
+{
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "batch_size": 32,
+  "image_size": 224,
+  "finite_loss": true,
+  "peak_allocated_gib": 1.4665708541870117,
+  "synthetic_training_images_per_second": 431.21372925146756,
+  "note": "Synthetic GPU batch only; excludes TIFF/cache loading and validation"
+}

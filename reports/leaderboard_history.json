@@ -1,0 +1,52 @@
+[
+  {
+    "reported_on": "2026-10-27",
+    "run_name": "baseline_cnn",
+    "submission": "submissions/submission_baseline.csv",
+    "submission_sha256": "5fd9913aedf081fdb66e9823eb28e36e6146162113f3d1640f87be76fd4f6d5c",
+    "score": 0.67294,
+    "score_source": "Reported by user in chat",
+    "leaderboard_partition": "unspecified",
+    "metric_name": "unverified"
+  },
+  {
+    "reported_on": "2026-10-28",
+    "run_name": "efficientnet_improved",
+    "submission": "submissions/submission_improved.csv",
+    "submission_sha256": "2b6a2963be747cb4f3eb84e73ec0b162e22864b38e8f80f20291eb4bd24cb41f",
+    "score": 0.85236,
+    "score_source": "Reported by user in chat",
+    "leaderboard_partition": "unspecified",
+    "metric_name": "unverified"
+  },
+  {
+    "reported_on": "2026-10-28",
+    "run_name": "highres_selection",
+    "submission": "submissions/submission_highres_selected.csv",
+    "submission_sha256": "9a2231e16ba635ae4f99aa8f74fe8ed5efd46853e856fc38f78b15a40e3303eb",
+    "score": 0.86491,
+    "score_source": "Reported by user in chat",
+    "leaderboard_partition": "unspecified",
+    "metric_name": "unverified"
+  },
+  {
+    "reported_on": "2026-10-31",
+    "run_name": "convnext_selection",
+    "submission": "submissions/submission_convnext_selected.csv",
+    "submission_sha256": "d71c12145fb05a0bbc056eab61c5289d678e27d72ebb43d3320eaff8c90bba4e",
+    "score": 0.88289,
+    "score_source": "Reported by user in chat",
+    "leaderboard_partition": "unspecified",
+    "metric_name": "unverified"
+  },
+  {
+    "reported_on": "2026-10-31",
+    "run_name": "ocr_header",
+    "submission": "submissions/submission_ocr_header.csv",
+    "submission_sha256": "f83b6d6b74019fd8ad88f54b9d4ffbfea3aee09c16bc39d7eb5a9f37e46298d3",
+    "score": 0.90046,
+    "score_source": "Reported by user in chat",
+    "leaderboard_partition": "unspecified",
+    "metric_name": "unverified"
+  }
+]

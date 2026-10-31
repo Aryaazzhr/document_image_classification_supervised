@@ -1,0 +1,19 @@
+{
+  "checked_artifacts": 211,
+  "docstrings": "pass",
+  "notebooks": "pass",
+  "artifact_size_limit_mb": 100,
+  "required_ignores": "pass",
+  "executed_notebooks": [
+    "01_eda.ipynb",
+    "02_modeling.ipynb",
+    "03_submission.ipynb",
+    "04_improve.ipynb",
+    "05_highres.ipynb",
+    "06_diversity.ipynb",
+    "07_resnet_highres.ipynb",
+    "08_convnext.ipynb",
+    "09_spatial_layout.ipynb",
+    "10_ocr_header.ipynb"
+  ]
+}

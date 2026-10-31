@@ -1,0 +1,14 @@
+{
+  "reference": "baseline_cnn",
+  "candidate": "efficientnet_improved",
+  "identical_split": true,
+  "accuracy_gain_percentage_points": 17.404222048475372,
+  "macro_f1_gain": 0.18029905674168345,
+  "corrected_errors": 1312,
+  "new_errors": 199,
+  "both_correct": 4152,
+  "both_wrong": 732,
+  "classes_with_f1_improvement": 16,
+  "candidate_leaderboard_score": 0.85236,
+  "recommended_run": "efficientnet_improved"
+}

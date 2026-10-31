@@ -1,0 +1,10 @@
+{
+  "view": "shift4",
+  "metadata_digest": "7d3d83196e1e9ae8aad8d980fbe579e496da5999e2e36f2622f0eeb4d08b179e",
+  "checkpoint_sha256": "d99adaa67fc13be635e4f1d9e2bc1a6a13ca23e15df1e45ba685e258f7ec9a83",
+  "distance_px": 4,
+  "padding": "white",
+  "device": "cuda",
+  "recipe": "original center FP32 plus four diagonal translations with equal weights",
+  "shifted_precision": "float16 autocast"
+}
